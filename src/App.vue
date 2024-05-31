@@ -1,11 +1,13 @@
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
+import ProductListComponent from './components/ProductListComponent.vue'
 
 
 export default {
     name: 'App',
     components: {
         HeaderComponent,
+        ProductListComponent,
     },
 };
 </script>

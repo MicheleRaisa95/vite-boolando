@@ -43,8 +43,9 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use '../assets/scss/partials/variables' as*;
 header {
-    background-color: #ff6900;
+    background-color: $header-bg-color;
 }
 .container {
     text-align: center;
@@ -52,7 +53,8 @@ header {
 
 nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 20px 0;
 
     img {
         display: block;
@@ -61,9 +63,8 @@ nav {
         width: 30%;
         padding: 20px;
     }
-}
 
-ul {
+    ul {
     display: flex;
     justify-content: center;
 
@@ -71,4 +72,7 @@ ul {
         padding: 20px;
     }
 }
+}
+
+
 </style>
