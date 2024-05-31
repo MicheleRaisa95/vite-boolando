@@ -1,0 +1,7 @@
+@use './partials/reset' as*;
+@use './partials/variables' as*;
+
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+}

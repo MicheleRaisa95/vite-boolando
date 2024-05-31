@@ -1,86 +1,74 @@
+<script>
+export default {
+    name: 'HeaderComponent'
+};
+</script>
+
 <template>
     <header>
-        <div class="container align-items">
-            <div class="row">
-                <div class="col-33">
-                    <ul class="unlisted-list text-center py-10">
-                        <li>
-                            <a href="">Donna</a>
-                        </li>
-                        <li>
-                            <a href="">Uomo</a>
-                        </li>
-                        <li>
-                            <a href="">Bambini</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-33 py-10">
-                    <img src="../assets/img/boolean-logo.png" alt="boolean" class="width logo">
-                </div>
-                <div class="col-33">
-                    <ul class="unlisted-list text-center py-10">
-                        <li>
-                            <span class="material-symbols-outlined">
-                                person
-                                </span>
-                        </li>
-                        <li><span class="material-symbols-outlined">
-                            favorite
-                            </span></li>
-                        <li><span class="material-symbols-outlined">
-                            shopping_bag
-                        </span></li>
-                    </ul>
-                </div>
+        <div class="container">
+            <nav>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">Uomo</a>
+                    </li>
+                    <li>
+                        <a href="#">Donna</a>
+                    </li>
+                    <li>
+                        <a href="#">Bambino</a>
+                    </li>
+                </ul>
             </div>
+            <div>
+                <img src="/image/boolean-logo.png" alt="boolando-logo">
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        person
+                    </li>
+                    <li>
+                        favorite
+                    </li>
+                    <li>
+                        shopping_bag
+                    </li>
+                </ul>
+            </div>
+            </nav>
         </div>
     </header>
 </template>
 
-<!-- Script -->
-
-<script>
-export default {
-    name: 'HeaderComponent'
-}
-</script>
-
-<!-- /Script -->
-
-<!-- Style -->
 <style scoped lang="scss">
 header {
-    background-color: orange;
-    padding: 10px 0;
+    background-color: #ff6900;
+}
+.container {
+    text-align: center;
+}
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .unlisted-list {
-        list-style: none;
-    padding: 0;
-    margin: 0;
+nav {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        padding: 20px;
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: center;
 
     li {
-        margin-right: 20px;
-        
-        a {
-            text-decoration: none;
-            color: black;
-        }
+        padding: 20px;
     }
-    }
-    .logo {
-        max-width: 150px;
-    }
-    .material-symbols-outlined {
-    font-size: 24px;
-}
 }
 </style>
-<!-- /Style -->
